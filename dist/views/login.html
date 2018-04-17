@@ -1,0 +1,38 @@
+    <div class="ngdialog-message" align="center">
+    <br>
+        <div class="btn5">
+            <h3>  Log-in to Ringa </h3>
+        </div>
+       <br>
+        <div class="text-centered" style="padding-top: 20px ;">
+         <img src="images/ring1.jpg" height=80 width=80>
+  </div>
+        <div class="">&nbsp;</div>
+        <div class="" >
+            <form ng-submit="doLogin()">
+            
+                <h5><div class="form-group ">
+                    <label class="sr-only" for="username">Username</label>
+                    <input type="text" class="form-control input-sm" id="username" placeholder="Phone number" ng-model="loginData.username">
+                </div></h5>
+                <h5><div class="form-group ">
+                    <label class="sr-only" for="password">Password</label>
+                    <input type="password" class="form-control input-sm" id="password" placeholder="Password" ng-model="loginData.password">
+                </div></h5>
+                <h6><div class="checkbox btn4 text-muted">
+                    <label>
+                        <input type="checkbox" ng-model="rememberMe">  Remember me | <a ng-click=openRegister()> <b class="b"> Forgot password ?</b> </a>
+                    </label>
+                </div></h6>
+                <button type="submit" class="btn  btn-info btn-sm btn6" style=" color: #002;">Go ahead</button> <br>
+                <button type="button" class="btn btn-default btn-sm  " ng-click=closeThisDialog("Cancel")>Cancel</button> &nbsp; &nbsp;
+                 <h6> <div class="btn4 text-muted">
+                    Don’t have an account? <a ng-click=openRegister()> <b class="b">Join Ringa now</b></a>
+                </div> </h6>
+                
+            </form>
+        </div>
+        <div>
+
+        </div>
+    </div>
